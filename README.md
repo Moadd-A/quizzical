@@ -1,7 +1,7 @@
 # 🎉 Quizzical — React + Vite Quiz App
 
 A simple general knowledge quiz built with **React** and **Vite**.  
-It fetches trivia questions from [Open Trivia DB](https://opentdb.com/), shuffles the answers, and checks your score!
+It fetches trivia questions from [Open Trivia DB](https://opentdb.com/), shuffles the answers, and checks your score.
 
 ---
 
