@@ -38,7 +38,7 @@ function App() {
   function shuffleAnswers(everyQuestion){
     return everyQuestion.sort(() => Math.random() - 0.5)
   }
-
+  
   function hold(answer, id){
      setQuestions((prevQuestions) => 
        prevQuestions.map((q) => 

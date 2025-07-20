@@ -1,17 +1,14 @@
 import he from "he"
 
 export default function Question(props){
-
-    console.log(props)
-
     return(
-        <>
             <div className="questions">
                {props.questions.map((question,index) => {
                 const selected = question.selectedAnswer
+                // map over the available answers and render inside of questionButtons
                 const questionButtons = question.allAnswers.map((q, index) => {
 
-                    const styles = {}
+                    const styles = {} // conditional styles for selected/correct/incorrect answers
                     if (props.hasCheckedAnswers) {
                       if (q === question.correct_answer) {
                         styles.backgroundColor = "#94D7A2"  // green for correct
@@ -30,7 +27,8 @@ export default function Question(props){
                     disabled={props.hasCheckedAnswers}
                     style={styles}
                     onClick={() => props.hold(q, question.id)} 
-                    key={index}> {he.decode(q)} </button>
+                    key={index}> {he.decode(q)} 
+                    </button>
                 })
 
                 return(
@@ -45,7 +43,5 @@ export default function Question(props){
                })}
                {!props.hasCheckedAnswers && <button className="check-answers"disabled={props.hasCheckedAnswers}onClick={props.checkAnswers}>Check answers</button>}
             </div>
-        </>
-
     )
 }
