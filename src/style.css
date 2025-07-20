@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: "Karla", sans-serif;
+    height: 100vh;
+    background-color: #F5F7FB;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h1{
+    margin: 0;
+    color: #293264;
+    
+}
+
+button{
+    font-family: Karla;
+    font-size: 0.85rem;
+    z-index: 5;
+}
+
+
+/* ----- Menu screen ----- */
+
+.start-game p{
+    margin-top: 0.43rem;
+    margin-bottom: 1.8rem;
+    color: #293264;
+}
+.start-game button{
+    border: none;
+    background: #4D5B9E;
+    width: 12rem;
+    height: 3.25rem;
+    border-radius: 15px;
+    color: #F5F7FB;
+    font-family: Karla;
+
+}
+
+.background-images img{
+    width: 18.75rem;
+    height: 18.75rem;
+    z-index: 1;
+}
+
+.background-images img:first-child{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.background-images img:last-child{
+    position: fixed;
+    top: -50px;
+    right: -50px;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* ----- Questions section ----- */
+
+.questions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #293264;
+    max-width: 35rem;
+    z-index: 2;
+    gap: 1.875rem;
+    padding: 1.25rem;
+}
+
+.questions .divider{
+    max-width: 35rem;
+    height: 0.794px;
+    background: #DBDEF0;
+}
+
+.questions button{
+    border: none;
+    border-radius: 0.5rem;
+    border: 0.794px solid #4D5B9E;
+    color: #293264;
+    background-color: #F5F7FB;
+    font-weight: 500;
+    margin-block: 20px;
+    padding: 0.19rem 0.75rem;
+    cursor: pointer;
+}
+
+.questions .question-btns{
+    display: flex;
+    gap: 0.82rem;
+}
+
+h2{
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    z-index: 2;
+    color: #293264;
+    font-weight: 700;
+}
+
+button:disabled{
+    cursor: not-allowed
+}
+
+footer button,.questions .check-answers{
+    border: none;
+    width: 7.5rem;
+    height: 2.2rem;
+    margin: auto;
+    background-color: #4D5B9E;
+    color: #F5F7FB;
+    border-radius: 0.5rem;
+}
+
+footer{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
